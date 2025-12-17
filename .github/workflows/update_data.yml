@@ -21,9 +21,6 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Install Dependencies
-      run: npm install
-
     - name: Run Full System Scan (Update Data)
       run: node full_system_scan.js
       timeout-minutes: 50 # Fail if stuck > 50 mins
